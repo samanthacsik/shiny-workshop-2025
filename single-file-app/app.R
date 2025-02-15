@@ -25,7 +25,7 @@ ui <- fluidPage(
                      label = "Select year(s):",
                      choices = c(2007, 2008, 2009), # unique(penguins$year)
                      selected = c(2007, 2008)
-                     ),
+  ),
   
   # DT output ----
   DT::dataTableOutput(outputId = "penguin_DT_output")
@@ -78,8 +78,8 @@ server <- function(input, output){
   ##                                                                            --
   ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
-
-# render the DT::datatable ----
+  
+  # render the DT::datatable ----
   output$penguin_DT_output <- DT::renderDataTable({
     
     DT::datatable(year_df())

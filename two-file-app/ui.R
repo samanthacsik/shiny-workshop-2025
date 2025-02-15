@@ -37,7 +37,7 @@ ui <- navbarPage(
                           checkboxGroupButtons(inputId = "section_input",
                                                label = "Select a sampling section(s):",
                                                choices = c("Clear Cut" = "clear cut forest",
-                                                            "Old Growth" = "old growth forest"),
+                                                           "Old Growth" = "old growth forest"),
                                                selected = c("clear cut forest",
                                                             "old growth forest"),
                                                justified = TRUE,

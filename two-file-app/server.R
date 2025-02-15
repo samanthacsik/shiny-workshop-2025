@@ -14,7 +14,7 @@ server <- function(input, output){
   output$trout_scatterplot_output <- renderPlot({
     
     ggplot(trout_filtered_df(), aes(x = length_mm, y = weight_g, 
-                                  color = channel_type, shape = channel_type)) +
+                                    color = channel_type, shape = channel_type)) +
       geom_point(alpha = 0.7, size = 5) +
       scale_color_manual(values = c("cascade" = "#2E2585", 
                                     "riffle" = "#337538", 
