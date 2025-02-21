@@ -35,7 +35,9 @@ body <- dashboardBody(
                    # background info box ----
                    box(width = NULL,
                        
-                       "background info here"
+                       title = tagList(icon("water"),
+                                       strong("Monitoring Fish Creek Watershed")),
+                       includeMarkdown("text/intro.md")
                        
                    ) # END backgroudn info box 
                    
@@ -50,7 +52,9 @@ body <- dashboardBody(
                      # citation box ----
                      box(width = NULL,
                          
-                         "data citation here"
+                         title = tagList(icon("table"),
+                                         strong("Data Source")),
+                         includeMarkdown("text/citation.md")
                          
                      ) # END citation box
                      
@@ -62,7 +66,9 @@ body <- dashboardBody(
                      # disclaimer box ----
                      box(width = NULL,
                          
-                         "disclaimer here"
+                         title = tagList(icon("triangle-exclamation"),
+                                         tags$strong("Disclaimer")),
+                         includeMarkdown("text/disclaimer.md")
                          
                      ) # END disclaimer box 
                      
